@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Private biometric data
+dataset/
+received/
+
+# Experiment results
+results/raw/
+
+# Log files
+*.log
+
+# Operating system files
+.DS_Store
