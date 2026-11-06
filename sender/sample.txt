@@ -1,0 +1,2 @@
+This is a synthetic biometric data transmission test.
+No real biometric information is included.
