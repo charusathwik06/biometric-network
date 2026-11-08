@@ -41,6 +41,25 @@ node experiments/scanDataset.js ./dataset --output=results/dataset-summary.json
 
 The scanner walks directories recursively, does not follow symbolic links, counts regular files by lowercase extension, and reports total files and bytes. A suggested local organisation is `dataset/<hand>/<region>/<phone>/<distance>/`; the scanner audits file totals and extensions but does not validate the meaning of folder labels. It does not inspect image/video contents.
 
+## Send images and videos separately
+
+For a simple local layout, keep image and video files in separate folders:
+
+```text
+dataset/
+  images/   # JPG images
+  videos/   # MP4 videos
+```
+
+Start the receiver with `npm start`, then use a second terminal to send either folder:
+
+```bash
+node sender/batch.js ./dataset/images
+node sender/batch.js ./dataset/videos
+```
+
+Each command sends the files directly inside that folder, one at a time. To use limited parallel uploads instead, run `node sender/batch-parallel.js ./dataset/images` or `node sender/batch-parallel.js ./dataset/videos`. The receiver stores uploaded copies in `received/`.
+
 ## Start the receiver and transfer synthetic samples
 
 Terminal 1:
