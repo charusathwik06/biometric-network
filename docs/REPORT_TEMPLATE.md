@@ -38,14 +38,20 @@ Record the Node.js version, machine/network setup, file sizes, and commands used
 
 ## 5. Performance results
 
-State whether each run used localhost/loopback or a real Wi-Fi/Ethernet LAN. Include the number of files and total bytes.
+The following local evaluation used a deterministic sample of 20 files from the already-captured dataset: 10 JPG images and 10 MP4 videos, totalling 104,049,594 bytes. Each measurement was repeated three times; the table reports the median. The receiver and sender ran on the same computer over localhost/loopback, with four workers in limited-parallel mode.
 
-| Mode | Concurrency | Files attempted | Successful | Failed | Duration (s) | Throughput (MB/s) | Success rate (%) |
+Environment: Node.js v26.13.0, Linux 7.2.14-arch1-1, 13th Gen Intel Core i5-13420H (12 logical CPUs). Receiver URL: `http://127.0.0.1:5000`. Command pattern: `node experiments/benchmark.js <sample-directory> --mode both --concurrency=4 --url=http://127.0.0.1:5000`.
+
+| Mode | Concurrency | Files attempted | Successful | Failed | Median duration (s) | Median throughput (MB/s) | Success rate (%) |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| Sequential | 1 | [measure] | [measure] | [measure] | [measure] | [measure] | [measure] |
-| Limited parallel | [measure] | [measure] | [measure] | [measure] | [measure] | [measure] | [measure] |
+| Sequential | 1 | 20 | 20 | 0 | 0.256 | 406.677 | 100 |
+| Limited parallel | 4 | 20 | 20 | 0 | 0.132 | 790.307 | 100 |
+
+Individual throughput readings across the three repetitions were 357.950, 431.332 and 406.677 MB/s for sequential mode, and 817.275, 790.307 and 758.615 MB/s for limited-parallel mode. The median parallel throughput was about 1.94 times the sequential result for this sample. Sanitised per-run summaries are kept locally in the ignored `results/raw/` directory.
 
 This project's benchmark throughput is total input bytes divided by measured wall-clock time; the measured interval includes per-file SHA-256 calculation and upload/receiver response. MB/s uses decimal megabytes (1 MB = 1,000,000 bytes). Mbps = MB/s × 8.
+
+These are localhost results, not Wi-Fi/Ethernet LAN results. They reflect this machine, its filesystem and loopback networking; run the same experiment across the intended LAN before making claims about LAN throughput.
 
 ## 6. Wireshark analysis
 
