@@ -76,6 +76,8 @@ node sender/batch.js ./path/to/synthetic-folder
 node sender/batch-parallel.js ./path/to/synthetic-folder
 ```
 
+The single-file command also prints elapsed duration and throughput for the upload, including file validation, SHA-256 calculation, sending, and the receiver's response.
+
 All senders use the shared `src/utils/hash.js` helper and the `SERVER_URL` environment variable. `SERVER_URL` is the receiver base URL, for example `http://127.0.0.1:5000`. The receiver endpoint is `/api/biometric/upload`.
 
 For a local two-terminal test, keep `HOST=127.0.0.1` and `SERVER_URL=http://127.0.0.1:5000`. For an approved lab-LAN test, set the receiver to `HOST=0.0.0.0`, and set the sender's `SERVER_URL` to the receiver's LAN address. Do not expose the receiver to an untrusted network.
