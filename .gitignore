@@ -11,7 +11,7 @@ dataset/
 received/
 
 # Experiment results
-results/raw/
+
 
 # Log files
 *.log

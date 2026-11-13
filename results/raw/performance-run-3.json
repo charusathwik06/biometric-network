@@ -1,0 +1,402 @@
+{
+  "generatedAt": "2026-11-10T06:12:34.614Z",
+  "networkScope": "localhost/loopback",
+  "endpointPath": "/api/biometric/upload",
+  "measurement": "Elapsed wall-clock time includes per-file SHA-256 calculation and upload/receiver response; throughput uses total input bytes divided by that elapsed time.",
+  "runs": [
+    {
+      "mode": "sequential",
+      "concurrency": 1,
+      "startedAt": "2026-11-10T06:12:34.221Z",
+      "endedAt": "2026-11-10T06:12:34.477Z",
+      "attemptedFiles": 20,
+      "totalBytes": 104049594,
+      "successfulBytes": 104049594,
+      "successfulFiles": 20,
+      "failedFiles": 0,
+      "successRatePercent": 100,
+      "durationMs": 255.85,
+      "throughputMBps": 406.677,
+      "throughputMbps": 3253.419,
+      "fileResults": [
+        {
+          "fileIndex": 1,
+          "bytes": 918838,
+          "durationMs": 10.15,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 2,
+          "bytes": 2188166,
+          "durationMs": 8.42,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 3,
+          "bytes": 1569003,
+          "durationMs": 5.67,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 4,
+          "bytes": 1958999,
+          "durationMs": 6.59,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 5,
+          "bytes": 2009020,
+          "durationMs": 6.55,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 6,
+          "bytes": 1522662,
+          "durationMs": 4.94,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 7,
+          "bytes": 1130417,
+          "durationMs": 7.58,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 8,
+          "bytes": 981914,
+          "durationMs": 4.85,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 9,
+          "bytes": 1737035,
+          "durationMs": 6,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 10,
+          "bytes": 1541957,
+          "durationMs": 4.31,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 11,
+          "bytes": 5033858,
+          "durationMs": 10.99,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 12,
+          "bytes": 6908160,
+          "durationMs": 16,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 13,
+          "bytes": 9490330,
+          "durationMs": 22.73,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 14,
+          "bytes": 10852843,
+          "durationMs": 22.85,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 15,
+          "bytes": 9509294,
+          "durationMs": 19.52,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 16,
+          "bytes": 9565183,
+          "durationMs": 18.84,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 17,
+          "bytes": 7754669,
+          "durationMs": 18.45,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 18,
+          "bytes": 12524518,
+          "durationMs": 23.73,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 19,
+          "bytes": 8077964,
+          "durationMs": 17.06,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 20,
+          "bytes": 8774764,
+          "durationMs": 18.48,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        }
+      ]
+    },
+    {
+      "mode": "parallel",
+      "concurrency": 4,
+      "startedAt": "2026-11-10T06:12:34.477Z",
+      "endedAt": "2026-11-10T06:12:34.614Z",
+      "attemptedFiles": 20,
+      "totalBytes": 104049594,
+      "successfulBytes": 104049594,
+      "successfulFiles": 20,
+      "failedFiles": 0,
+      "successRatePercent": 100,
+      "durationMs": 137.16,
+      "throughputMBps": 758.615,
+      "throughputMbps": 6068.923,
+      "fileResults": [
+        {
+          "fileIndex": 1,
+          "bytes": 918838,
+          "durationMs": 6.3,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 2,
+          "bytes": 2188166,
+          "durationMs": 15.06,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 3,
+          "bytes": 1569003,
+          "durationMs": 11.58,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 4,
+          "bytes": 1958999,
+          "durationMs": 13.54,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 5,
+          "bytes": 2009020,
+          "durationMs": 10.2,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 6,
+          "bytes": 1522662,
+          "durationMs": 6.82,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 7,
+          "bytes": 1130417,
+          "durationMs": 5.64,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 8,
+          "bytes": 981914,
+          "durationMs": 5.11,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 9,
+          "bytes": 1737035,
+          "durationMs": 8.08,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 10,
+          "bytes": 1541957,
+          "durationMs": 7.48,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 11,
+          "bytes": 5033858,
+          "durationMs": 22.45,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 12,
+          "bytes": 6908160,
+          "durationMs": 36.49,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 13,
+          "bytes": 9490330,
+          "durationMs": 48.31,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 14,
+          "bytes": 10852843,
+          "durationMs": 55.98,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 15,
+          "bytes": 9509294,
+          "durationMs": 52.41,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 16,
+          "bytes": 9565183,
+          "durationMs": 43.75,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 17,
+          "bytes": 7754669,
+          "durationMs": 30.85,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 18,
+          "bytes": 12524518,
+          "durationMs": 54.38,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 19,
+          "bytes": 8077964,
+          "durationMs": 37.4,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        },
+        {
+          "fileIndex": 20,
+          "bytes": 8774764,
+          "durationMs": 36.31,
+          "success": true,
+          "statusCode": 201,
+          "integrity": "passed",
+          "errorCode": null
+        }
+      ]
+    }
+  ]
+}
